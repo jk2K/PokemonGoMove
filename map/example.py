@@ -168,7 +168,7 @@ def retrying_set_location(location_name):
 
 
 def set_location(location_name):
-    geolocator = GoogleV3()
+    geolocator = GoogleV3(GOOGLEMAPS_KEY)
     prog = re.compile('^(\-?\d+(\.\d+)?),\s*(\-?\d+(\.\d+)?)$')
     global origin_lat
     global origin_lon
